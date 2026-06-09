@@ -1,12 +1,12 @@
 
 7. Printing statistics.
 
-=== uart_rx ===
+=== $paramod$2f28e6b50d553ba7480b3b1381415ae016118774\uart_rx ===
 
    Number of wires:                 39
-   Number of wire bits:            102
+   Number of wire bits:             92
    Number of public wires:          15
-   Number of public wire bits:      48
+   Number of public wire bits:      43
    Number of memories:               0
    Number of memory bits:            0
    Number of processes:              0
@@ -23,4 +23,77 @@
      $reduce_or                      2
      $sdff                           4
      $sdffe                          2
+
+=== $paramod$2f28e6b50d553ba7480b3b1381415ae016118774\uart_tx ===
+
+   Number of wires:                 34
+   Number of wire bits:            124
+   Number of public wires:          12
+   Number of public wire bits:      37
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 28
+     $add                            2
+     $eq                             3
+     $ge                             1
+     $logic_and                      3
+     $logic_not                      1
+     $lt                             1
+     $mux                            8
+     $not                            1
+     $reduce_bool                    3
+     $reduce_or                      1
+     $sdff                           1
+     $sdffe                          3
+
+=== uart ===
+
+   Number of wires:                 20
+   Number of wire bits:             41
+   Number of public wires:          14
+   Number of public wire bits:      35
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 12
+     $logic_and                      2
+     $logic_not                      2
+     $mux                            1
+     $not                            1
+     $paramod$2f28e6b50d553ba7480b3b1381415ae016118774\uart_rx      1
+     $paramod$2f28e6b50d553ba7480b3b1381415ae016118774\uart_tx      1
+     $reduce_or                      1
+     $sdff                           1
+     $sdffe                          2
+
+=== design hierarchy ===
+
+   uart                              1
+     $paramod$2f28e6b50d553ba7480b3b1381415ae016118774\uart_rx      1
+     $paramod$2f28e6b50d553ba7480b3b1381415ae016118774\uart_tx      1
+
+   Number of wires:                 93
+   Number of wire bits:            257
+   Number of public wires:          41
+   Number of public wire bits:     115
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 72
+     $add                            4
+     $dffe                           1
+     $eq                            10
+     $ge                             1
+     $logic_and                      7
+     $logic_not                      4
+     $logic_or                       5
+     $lt                             1
+     $mux                           15
+     $not                            3
+     $pmux                           1
+     $reduce_bool                    3
+     $reduce_or                      4
+     $sdff                           6
+     $sdffe                          7
 
